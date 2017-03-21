@@ -2,15 +2,14 @@ import { createStore, combineReducers, applyMiddleware } from 'redux';
 import thunkMiddleware from 'redux-thunk';
 
 // Module Reducers
-import bannerReducer from '../../model/banner.js';
-import errorReducer from '../../model/error.js';
+import bannerReducer from '../../../model/banner.js';
+import errorReducer from '../../../model/error.js';
 
 // Combine them
 const appReducers = combineReducers({
     banner: bannerReducer,
     error: errorReducer
 });
-
 
 // Logger
 const logger = store => next => action => {
