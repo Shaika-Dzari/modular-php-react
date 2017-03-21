@@ -9,7 +9,7 @@ import Alert from '../../component/alert.jsx';
 const App = () => {
     return (
         <Provider store={store}>
-            <Alert message="Alert Message avec React, Redux et Fetch" />
+            <Alert message="Alert Message avec React, Redux et Fetch..." />
         </Provider>
     );
 };
